@@ -4,12 +4,22 @@
 
 var computer, giocatore, risultato;
 
+document.getElementById("gioca").addEventListener('click',
+function() {
+// codice
 computer = Math.floor(Math.random()*6) + 1;
 giocatore = Math.floor(Math.random()*6) + 1;
 risultato = 'Pareggio';
 if (computer > giocatore) {
   risultato = 'Hai Perso'
 } else if (giocatore > computer) {
-    risultato = 'Hai vinto'
+    risultato = 'Hai Vinto'
 }
-console.log(computer, giocatore, risultato);
+console.log(giocatore, computer, risultato);
+
+document.getElementById('ris-computer').innerHTML = computer;
+document.getElementById('ris-giocatore').innerHTML = giocatore;
+document.getElementById('message').innerHTML = risultato;
+//
+}
+);
