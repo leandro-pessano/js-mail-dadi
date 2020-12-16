@@ -14,9 +14,9 @@ computer = Math.floor(Math.random()*6) + 1;
 giocatore = Math.floor(Math.random()*6) + 1;
 risultato = 'Pareggio';
 if (computer > giocatore) {
-  risultato = 'Hai Perso'
+  risultato = 'Hai Perso';
 } else if (giocatore > computer) {
-    risultato = 'Hai Vinto'
+    risultato = 'Hai Vinto';
 }
 
 // valori a schermo
